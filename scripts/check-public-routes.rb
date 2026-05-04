@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require "net/http"
+require "json"
 require "pathname"
 require "uri"
 
@@ -88,6 +89,7 @@ ROUTES = [
 ].freeze
 
 ASSET_ROUTES = [
+  "/.well-known/apple-app-site-association",
   "/assets/steak-stage-seasoned.jpg",
   "/assets/steak-stage-searing.jpg",
   "/assets/steak-stage-resting.jpg",
@@ -95,6 +97,17 @@ ASSET_ROUTES = [
   "/favicon.ico",
   "/robots.txt",
   "/sitemap.xml"
+].freeze
+
+UNIVERSAL_LINK_MARKERS = [
+  "SW9DHVDGY8.mysli.network.app",
+  "SW9DHVDGY8.mysli.network.app.staging",
+  "/qr*",
+  "/corporate/*",
+  "/payer/*",
+  "/identity-verification*",
+  "/interpreter/referral*",
+  "/stripe-connect*"
 ].freeze
 
 def body_for_url(base_url, path)
@@ -135,6 +148,13 @@ def check_asset_files!
   end
 end
 
+def check_universal_links!(body)
+  JSON.parse(body)
+  UNIVERSAL_LINK_MARKERS.each do |marker|
+    raise "/.well-known/apple-app-site-association is missing required marker: #{marker.inspect}" unless body.include?(marker)
+  end
+end
+
 base_url = ARGV.first
 
 ROUTES.each do |route|
@@ -145,11 +165,13 @@ end
 
 if base_url
   ASSET_ROUTES.each do |path|
-    body_for_url(base_url, path)
+    body = body_for_url(base_url, path)
+    check_universal_links!(body) if path == "/.well-known/apple-app-site-association"
     puts "ok url #{path}"
   end
 else
   check_asset_files!
+  check_universal_links!(PUBLIC_DIR.join(".well-known/apple-app-site-association").read)
 end
 
 puts "mysli.network public route smoke check passed"

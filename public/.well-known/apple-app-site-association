@@ -1,0 +1,44 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "SW9DHVDGY8.mysli.network.app",
+          "SW9DHVDGY8.mysli.network.app.staging"
+        ],
+        "components": [
+          {
+            "/": "/qr*",
+            "comment": "Corporate QR payer handoff links"
+          },
+          {
+            "/": "/corporate/*",
+            "comment": "Corporate payer context links"
+          },
+          {
+            "/": "/payer/*",
+            "comment": "Corporate payer context links"
+          },
+          {
+            "/": "/identity-verification*",
+            "comment": "Identity verification return links"
+          },
+          {
+            "/": "/interpreter/referral*",
+            "comment": "Interpreter referral invite links"
+          },
+          {
+            "/": "/stripe-connect*",
+            "comment": "Interpreter Stripe Connect return links"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "SW9DHVDGY8.mysli.network.app",
+      "SW9DHVDGY8.mysli.network.app.staging"
+    ]
+  }
+}

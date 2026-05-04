@@ -71,6 +71,7 @@ sudo chown -R "$(id -u):$(id -g)" "$HOME/.npm"
 - Publish directory: `public`
 - Production domain: `mysli.network`
 - Redirect `www.mysli.network` to apex
+- Serve `/.well-known/apple-app-site-association` with `Content-Type: application/json`
 
 ## Required Routes
 
@@ -81,6 +82,23 @@ sudo chown -R "$(id -u):$(id -g)" "$HOME/.npm"
 - `/account-deletion/`
 - `/contact/`
 - `/accessibility/`
+- `/.well-known/apple-app-site-association`
+
+## Apple Universal Links
+
+The static association file at `public/.well-known/apple-app-site-association` connects `mysli.network` to the production and staging iOS bundle IDs:
+
+- `SW9DHVDGY8.mysli.network.app`
+- `SW9DHVDGY8.mysli.network.app.staging`
+
+It currently allows app handoff for corporate QR payer links, identity verification returns, interpreter referrals, and Stripe Connect returns:
+
+- `/qr*`
+- `/corporate/*`
+- `/payer/*`
+- `/identity-verification*`
+- `/interpreter/referral*`
+- `/stripe-connect*`
 
 ## Launch Notes
 
