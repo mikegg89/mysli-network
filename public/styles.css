@@ -198,7 +198,7 @@ h1 {
   width: 100%;
 }
 
-.temperature {
+.cook-progress {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -208,7 +208,7 @@ h1 {
   width: 100%;
 }
 
-.temperature strong {
+.cook-progress strong {
   display: block;
   margin-bottom: 10px;
 }

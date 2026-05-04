@@ -20,6 +20,7 @@ ROUTES = [
       "human sign language interpreting",
       "state eligibility",
       "corporate ADA QR billing",
+      "Current cook stage: cooking",
       "steak-stage-searing.jpg"
     ]
   ),
