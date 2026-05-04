@@ -481,6 +481,82 @@ h1 {
   padding: 16px;
 }
 
+.lead-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.lead-form label {
+  font-weight: 850;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font: inherit;
+  min-height: 48px;
+  padding: 12px;
+  width: 100%;
+}
+
+.lead-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.lead-form input:focus-visible,
+.lead-form select:focus-visible,
+.lead-form textarea:focus-visible {
+  border-color: var(--primary);
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.checkbox-row {
+  align-items: flex-start;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 24px 1fr;
+}
+
+.checkbox-row input {
+  min-height: 24px;
+}
+
+.optional-text {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.hidden-field {
+  left: -10000px;
+  position: absolute;
+}
+
+.form-status {
+  font-weight: 850;
+  min-height: 28px;
+}
+
+.success-text {
+  color: var(--green);
+}
+
+.error-text {
+  color: var(--red);
+}
+
+.form-fallback {
+  color: var(--muted);
+  margin-top: 24px;
+}
+
 @media (max-width: 900px) {
   .hero,
   .milestone-grid,

@@ -46,6 +46,18 @@ ROUTES = [
     ]
   ),
   Route.new(
+    path: "/early-access/",
+    file: "early-access/index.html",
+    markers: [
+      "Request MySLI early access",
+      "I need an interpreter",
+      "I am an interpreter",
+      "I represent an organization",
+      "no sensitive details",
+      "submitEarlyAccessLead"
+    ]
+  ),
+  Route.new(
     path: "/terms/",
     file: "terms/index.html",
     markers: [
@@ -104,6 +116,7 @@ ASSET_ROUTES = [
   "/assets/steak-stage-searing.jpg",
   "/assets/steak-stage-resting.jpg",
   "/assets/steak-stage-medium-rare.jpg",
+  "/early-access.js",
   "/favicon.ico",
   "/robots.txt",
   "/sitemap.xml"
