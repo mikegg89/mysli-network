@@ -19,7 +19,8 @@ ROUTES = [
       "let it cook",
       "human sign language interpreting",
       "state eligibility",
-      "corporate ADA QR billing"
+      "corporate ADA QR billing",
+      "steak-stage-searing.jpg"
     ]
   ),
   Route.new(
@@ -86,7 +87,11 @@ ROUTES = [
 ].freeze
 
 ASSET_ROUTES = [
-  "/assets/mysli-cooking.svg",
+  "/assets/steak-stage-seasoned.jpg",
+  "/assets/steak-stage-searing.jpg",
+  "/assets/steak-stage-resting.jpg",
+  "/assets/steak-stage-medium-rare.jpg",
+  "/favicon.ico",
   "/robots.txt",
   "/sitemap.xml"
 ].freeze
