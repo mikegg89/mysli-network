@@ -102,7 +102,14 @@ def body_for_url(base_url, path)
   unless response.code.to_i.between?(200, 299)
     raise "#{uri} returned #{response.code}"
   end
+  if namecheap_parking?(response.body)
+    raise "#{uri} is still serving the Namecheap parking page. Update the domain DNS/Netlify custom-domain records, then rerun this check after propagation."
+  end
   response.body
+end
+
+def namecheap_parking?(body)
+  body.include?("Namecheap Parking Page") || body.include?("/nc_assets/")
 end
 
 def body_for_file(route)

@@ -44,6 +44,13 @@ After Netlify DNS is live, check production:
 ruby scripts/check-public-routes.rb https://mysli.network
 ```
 
+If this reports a Namecheap parking page, the domain is still pointed at Namecheap parking instead of Netlify. In Namecheap or Netlify DNS, finish the Netlify custom-domain setup, remove parking records, and point:
+
+- Apex `mysli.network` to the Netlify-provided apex record or Netlify DNS.
+- `www.mysli.network` to the Netlify-provided `CNAME`.
+
+Then rerun the smoke check after DNS propagation.
+
 If you prefer `npx serve`, use a project-local npm cache to avoid root-owned files in `~/.npm`:
 
 ```bash
