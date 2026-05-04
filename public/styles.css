@@ -215,13 +215,16 @@ h1 {
   border-radius: 999px;
   height: 14px;
   overflow: hidden;
+  --progress: 42%;
+  --progress-ratio: 0.42;
 }
 
 .meter span {
   background: linear-gradient(90deg, var(--red), var(--gold), var(--green));
+  background-size: calc(100% / var(--progress-ratio)) 100%;
   display: block;
   height: 100%;
-  width: 42%;
+  width: var(--progress);
 }
 
 .milestones {
