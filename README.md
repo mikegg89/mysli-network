@@ -6,12 +6,33 @@ This site is intentionally static and dependency-free so it can deploy cheaply o
 
 ## Local Development
 
+Use the built-in macOS Ruby server so local preview does not depend on npm or global npm cache permissions:
+
 ```bash
 cd /Users/michealgiles/Documents/GitHub/mysli-network
-npx serve public
+ruby -run -e httpd public -p 4187
 ```
 
-Or open `public/index.html` directly in a browser.
+Then open:
+
+```text
+http://127.0.0.1:4187
+```
+
+You can also open `public/index.html` directly in a browser.
+
+If you prefer `npx serve`, use a project-local npm cache to avoid root-owned files in `~/.npm`:
+
+```bash
+cd /Users/michealgiles/Documents/GitHub/mysli-network
+npm_config_cache=.npm-cache npx serve public
+```
+
+To permanently repair the global npm cache on this Mac:
+
+```bash
+sudo chown -R "$(id -u):$(id -g)" "$HOME/.npm"
+```
 
 ## Netlify
 
