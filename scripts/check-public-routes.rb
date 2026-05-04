@@ -22,6 +22,9 @@ ROUTES = [
       "state eligibility",
       "corporate ADA QR billing",
       "Current cook stage: cooking",
+      "No AI interpretation",
+      "No call recordings",
+      "No transcripts",
       "steak-stage-searing.jpg"
     ]
   ),
