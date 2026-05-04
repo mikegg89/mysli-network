@@ -163,6 +163,50 @@ h1 {
   text-decoration: none;
 }
 
+.role-cta-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+  max-width: 840px;
+}
+
+.role-cta {
+  background: white;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--primary);
+  border-radius: 8px;
+  color: var(--ink);
+  display: block;
+  min-height: 72px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.role-cta:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.role-cta:hover {
+  border-color: #9fc8d1;
+  box-shadow: 0 12px 32px rgba(14, 32, 45, 0.1);
+}
+
+.role-cta strong,
+.role-cta span {
+  display: block;
+}
+
+.role-cta strong {
+  font-size: 1.02rem;
+  margin-bottom: 5px;
+}
+
+.role-cta span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
 .button.secondary {
   background: transparent;
   color: var(--primary);
