@@ -1,0 +1,26 @@
+[build]
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[redirects]]
+  from = "https://www.mysli.network/*"
+  to = "https://mysli.network/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/help"
+  to = "/support/"
+  status = 301
+
+[[redirects]]
+  from = "/delete-account"
+  to = "/account-deletion/"
+  status = 301

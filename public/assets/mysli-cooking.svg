@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">MySLI cooking in a skillet</title>
+  <desc id="desc">A warm launch illustration showing the MySLI name searing in a frying pan as the app moves toward public release.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7fbfc"/>
+      <stop offset="1" stop-color="#dff2f2"/>
+    </linearGradient>
+    <linearGradient id="pan" x1="0" x2="1">
+      <stop offset="0" stop-color="#152633"/>
+      <stop offset="1" stop-color="#334856"/>
+    </linearGradient>
+    <linearGradient id="steak" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8d2c25"/>
+      <stop offset="0.45" stop-color="#d06b47"/>
+      <stop offset="1" stop-color="#6f211f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#102333" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g opacity=".22">
+    <circle cx="990" cy="150" r="78" fill="#16a3a3"/>
+    <circle cx="175" cy="185" r="46" fill="#d99025"/>
+    <circle cx="1030" cy="740" r="52" fill="#075e72"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M822 495c54 38 137 104 224 174 30 24 35 68 11 98-23 29-66 34-96 12L740 614Z" fill="#263946"/>
+    <ellipse cx="540" cy="492" rx="404" ry="247" fill="url(#pan)"/>
+    <ellipse cx="540" cy="473" rx="344" ry="199" fill="#101c26"/>
+    <ellipse cx="540" cy="461" rx="302" ry="164" fill="#223440"/>
+  </g>
+  <g>
+    <path d="M333 313c-30-54 17-105 69-88 20 7 34 21 48 37 25-45 91-47 126-6 16 19 22 41 20 64 47-33 111 5 105 63-3 35-27 59-58 74 37 23 52 70 23 108-30 40-86 37-119 11-15 48-83 60-120 22-17-17-24-39-24-61-48 18-101-17-103-69-1-30 13-54 36-71-25-18-39-50-23-84Z" fill="url(#steak)"/>
+    <path d="M393 320c71 20 141 61 202 128M373 393c86 20 159 58 219 113M421 526c54-7 107-1 158 19" fill="none" stroke="#f4b18b" stroke-width="18" stroke-linecap="round" opacity=".75"/>
+    <text x="500" y="455" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900" fill="#fff">MySLI</text>
+    <text x="500" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffe0c7">let it cook</text>
+  </g>
+  <g fill="none" stroke="#d99025" stroke-width="18" stroke-linecap="round" opacity=".78">
+    <path d="M324 197c-40-40 42-53 3-94"/>
+    <path d="M517 173c-43-44 48-61 5-105"/>
+    <path d="M681 219c-32-38 37-53 2-91"/>
+  </g>
+  <g transform="translate(218 704)">
+    <rect width="645" height="36" rx="18" fill="#dce7ed"/>
+    <rect width="270" height="36" rx="18" fill="#d99025"/>
+    <circle cx="270" cy="18" r="30" fill="#fff" stroke="#d99025" stroke-width="10"/>
+    <text x="0" y="88" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#13202b">Current cook: searing the production app</text>
+  </g>
+</svg>
