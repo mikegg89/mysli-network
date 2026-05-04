@@ -21,6 +21,29 @@ http://127.0.0.1:4187
 
 You can also open `public/index.html` directly in a browser.
 
+## Smoke Checks
+
+Check required App Store/support routes and public launch markers directly from files:
+
+```bash
+cd /Users/michealgiles/Documents/GitHub/mysli-network
+ruby scripts/check-public-routes.rb
+```
+
+Check a running local server:
+
+```bash
+cd /Users/michealgiles/Documents/GitHub/mysli-network
+ruby -run -e httpd public -p 4187
+ruby scripts/check-public-routes.rb http://127.0.0.1:4187
+```
+
+After Netlify DNS is live, check production:
+
+```bash
+ruby scripts/check-public-routes.rb https://mysli.network
+```
+
 If you prefer `npx serve`, use a project-local npm cache to avoid root-owned files in `~/.npm`:
 
 ```bash
