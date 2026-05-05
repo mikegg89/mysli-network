@@ -79,6 +79,26 @@ ROUTES = [
     ]
   ),
   Route.new(
+    path: "/stripe-connect/return/",
+    file: "stripe-connect/return/index.html",
+    markers: [
+      "Payout setup returned to MySLI",
+      "Refresh Payout Status",
+      "Open MySLI Staging",
+      "mysli-staging://stripe-connect/return"
+    ]
+  ),
+  Route.new(
+    path: "/stripe-connect/refresh/",
+    file: "stripe-connect/refresh/index.html",
+    markers: [
+      "Continue payout setup in MySLI",
+      "Set Up Payouts",
+      "Open MySLI Staging",
+      "mysli-staging://stripe-connect/refresh"
+    ]
+  ),
+  Route.new(
     path: "/account-deletion/",
     file: "account-deletion/index.html",
     markers: [
