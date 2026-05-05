@@ -99,6 +99,17 @@ ROUTES = [
     ]
   ),
   Route.new(
+    path: "/identity-verification/",
+    file: "identity-verification/index.html",
+    markers: [
+      "Identity verification returned to MySLI",
+      "Open MySLI Staging",
+      "mysli-staging://identity-verification",
+      "support@mysli.network",
+      "not raw driver's license images"
+    ]
+  ),
+  Route.new(
     path: "/account-deletion/",
     file: "account-deletion/index.html",
     markers: [
