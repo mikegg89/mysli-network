@@ -124,6 +124,48 @@
         <label for="organizationName">Organization name <span class="optional-text">required for organizations</span></label>
         <input id="organizationName" name="organizationName" type="text" autocomplete="organization">
 
+        <label for="organizationContactRole">Organization role or title <span class="optional-text">for corporate pilots</span></label>
+        <input id="organizationContactRole" name="organizationContactRole" type="text" autocomplete="organization-title">
+
+        <label for="departmentsOrLocations">Departments, locations, or rooms <span class="optional-text">no private details</span></label>
+        <input id="departmentsOrLocations" name="departmentsOrLocations" type="text" placeholder="Example: Radiology, front desk, shared iPad rooms">
+
+        <label for="expectedMonthlySessions">Expected monthly sessions</label>
+        <select id="expectedMonthlySessions" name="expectedMonthlySessions">
+          <option value="unknown">Not sure yet</option>
+          <option value="1-5">1 to 5</option>
+          <option value="6-20">6 to 20</option>
+          <option value="21-50">21 to 50</option>
+          <option value="51+">51 or more</option>
+        </select>
+
+        <label for="urgency">Launch timing</label>
+        <select id="urgency" name="urgency">
+          <option value="">Choose the closest fit</option>
+          <option value="Exploring">Exploring</option>
+          <option value="Ready this quarter">Ready this quarter</option>
+          <option value="Urgent pilot needed">Urgent pilot needed</option>
+        </select>
+
+        <label for="interpreterCredentialStatus">Interpreter credential status <span class="optional-text">for interpreters</span></label>
+        <select id="interpreterCredentialStatus" name="interpreterCredentialStatus">
+          <option value="">Choose the closest fit</option>
+          <option value="RID certified">RID certified</option>
+          <option value="RID certified with state documentation ready">RID certified with state documentation ready</option>
+          <option value="State license or registration ready">State license or registration ready</option>
+          <option value="Credential review questions">I have credential review questions</option>
+        </select>
+
+        <label for="interpreterAvailability">Interpreter availability <span class="optional-text">for interpreters</span></label>
+        <select id="interpreterAvailability" name="interpreterAvailability">
+          <option value="">Choose the closest fit</option>
+          <option value="Weekdays">Weekdays</option>
+          <option value="Evenings">Evenings</option>
+          <option value="Weekends">Weekends</option>
+          <option value="Flexible">Flexible</option>
+          <option value="Corporate scheduled sessions only">Corporate scheduled sessions only</option>
+        </select>
+
         <label for="preferredContactMethod">Preferred contact</label>
         <select id="preferredContactMethod" name="preferredContactMethod">
           <option value="email">Email</option>

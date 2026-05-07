@@ -54,6 +54,9 @@ ROUTES = [
       "I am an interpreter",
       "I represent an organization",
       "no sensitive details",
+      "Expected monthly sessions",
+      "Interpreter credential status",
+      "Departments, locations, or rooms",
       "submitEarlyAccessLead"
     ]
   ),
