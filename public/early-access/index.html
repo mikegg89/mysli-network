@@ -124,6 +124,18 @@
         <label for="organizationName">Organization name <span class="optional-text">required for organizations</span></label>
         <input id="organizationName" name="organizationName" type="text" autocomplete="organization">
 
+        <label for="organizationType">Organization type <span class="optional-text">for corporate pilots</span></label>
+        <select id="organizationType" name="organizationType">
+          <option value="">Choose the closest fit</option>
+          <option value="Hospital">Hospital</option>
+          <option value="Clinic">Clinic</option>
+          <option value="School or university">School or university</option>
+          <option value="Business">Business</option>
+          <option value="Architecture or engineering firm">Architecture or engineering firm</option>
+          <option value="Government or public agency">Government or public agency</option>
+          <option value="Other organization">Other organization</option>
+        </select>
+
         <label for="organizationContactRole">Organization role or title <span class="optional-text">for corporate pilots</span></label>
         <input id="organizationContactRole" name="organizationContactRole" type="text" autocomplete="organization-title">
 
@@ -164,6 +176,15 @@
           <option value="Weekends">Weekends</option>
           <option value="Flexible">Flexible</option>
           <option value="Corporate scheduled sessions only">Corporate scheduled sessions only</option>
+        </select>
+
+        <label for="interpreterPreferredDevice">Preferred interpreting device <span class="optional-text">for interpreters</span></label>
+        <select id="interpreterPreferredDevice" name="interpreterPreferredDevice">
+          <option value="">Choose the closest fit</option>
+          <option value="iPhone">iPhone</option>
+          <option value="iPad">iPad</option>
+          <option value="Mac laptop or desktop">Mac laptop or desktop</option>
+          <option value="Multiple devices">Multiple devices</option>
         </select>
 
         <label for="preferredContactMethod">Preferred contact</label>
