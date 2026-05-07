@@ -58,6 +58,34 @@ ROUTES = [
     ]
   ),
   Route.new(
+    path: "/corporate-pilot/",
+    file: "corporate-pilot/index.html",
+    markers: [
+      "Corporate ADA pilots",
+      "The Deaf user should be charged $0 for corporate sessions.",
+      "Reusable QR codes",
+      "Shared iPad launch",
+      "Technical and spatial pilots",
+      "state, identity, billing, and readiness gates",
+      "Request a corporate pilot",
+      "private medical, student, employee, legal, insurance, or payment card details"
+    ]
+  ),
+  Route.new(
+    path: "/interpreters/",
+    file: "interpreters/index.html",
+    markers: [
+      "Interpreter Applications",
+      "Specialized matching",
+      "Rate and availability control",
+      "Foundation impact",
+      "RID certification and state-specific license or registration document upload",
+      "pre-call readiness acknowledgement",
+      "Optional VR/AR and CAD collaboration readiness",
+      "Apply as an interpreter"
+    ]
+  ),
+  Route.new(
     path: "/terms/",
     file: "terms/index.html",
     markers: [

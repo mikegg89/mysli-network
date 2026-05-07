@@ -76,9 +76,15 @@ sudo chown -R "$(id -u):$(id -g)" "$HOME/.npm"
 ## Required Routes
 
 - `/`
+- `/early-access/`
+- `/corporate-pilot/`
+- `/interpreters/`
 - `/privacy/`
 - `/terms/`
 - `/support/`
+- `/stripe-connect/return/`
+- `/stripe-connect/refresh/`
+- `/identity-verification/`
 - `/account-deletion/`
 - `/contact/`
 - `/accessibility/`
